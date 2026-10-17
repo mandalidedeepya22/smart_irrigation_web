@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Irrigation Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 AI Smart Irrigation Reminder</h1>
+        <p>Enter your crop details to get irrigation advice:</p>
+
+        <label for="crop">Crop <i class="fas fa-seedling"></i></label>
+        <input type="text" id="crop" placeholder="e.g. Tomato">
+
+        <label for="soil">Soil Type <i class="fas fa-leaf"></i></label>
+        <select id="soil">
+            <option value="sandy">Sandy</option>
+            <option value="loamy">Loamy</option>
+            <option value="clay">Clay</option>
+        </select>
+
+        <label for="weather">Weather <i class="fas fa-cloud-sun"></i></label>
+        <select id="weather">
+            <option value="hot">Hot</option>
+            <option value="normal">Normal</option>
+            <option value="rainy">Rainy</option>
+        </select>
+
+        <label for="stage">Growth Stage <i class="fas fa-leaf"></i></label>
+        <select id="stage">
+            <option value="seedling">Seedling</option>
+            <option value="vegetative">Vegetative</option>
+            <option value="flowering">Flowering</option>
+        </select>
+
+        <div class="buttons">
+            <button onclick="getAdvice()"><i class="fas fa-water"></i> Get Advice</button>
+            <button onclick="resetForm()"><i class="fas fa-undo"></i> Reset</button>
+        </div>
+
+        <div id="result" class="result-card"></div>
+
+        <footer>
+            <p>Developed by Your Name | Agriculture Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
